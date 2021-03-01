@@ -1,7 +1,5 @@
 import pytest
 def func_float(x,y):
-    if x==0:
-        return x
     return x/y
 def func_int(x):
     return x*x
