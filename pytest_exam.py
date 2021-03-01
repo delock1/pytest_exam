@@ -6,9 +6,8 @@ def func_float(x,y):
 def func_int(x):
     return x*x
 @pytest.mark.parametrize("test_input,expected", [(-900, True), (900, True), (0.05, False)])
-def test_int1(test_input, expected):
+def test_int(test_input, expected):
     assert isinstance(test_input,int) == expected
-def test_int2():
     try:
         assert func_int("string")
     except TypeError:
